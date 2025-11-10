@@ -1,6 +1,6 @@
 :root {
-  --bg: #0b0b0d;
-  --bg-alt: #131316;
+  --bg: #121216;
+  --bg-alt: #1c1c21;
   --bg-inverse: #f7f7f7;
   --text: #e5e5e5;
   --text-muted: #a7a7a7;
@@ -17,7 +17,7 @@
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  background: radial-gradient(circle at top right, #16161a, var(--bg));
+  background: radial-gradient(circle at top right, #23232a 0%, #18181e 45%, var(--bg));
   color: var(--text);
   min-height: 100vh;
   position: relative;
@@ -28,9 +28,9 @@ body::before {
   content: '';
   position: fixed;
   inset: -10% -20% 0;
-  background: url('assets/asf-logo.svg') center/65vw no-repeat;
-  opacity: 0.08;
-  filter: blur(2px);
+  background: url('assets/asf-logo.svg') center/60vw no-repeat;
+  opacity: 0.22;
+  filter: grayscale(100%);
   z-index: -2;
   pointer-events: none;
 }
@@ -135,9 +135,9 @@ main {
   width: min(72vw, 680px);
   aspect-ratio: 1;
   background: url('assets/asf-logo.svg') center/contain no-repeat;
-  opacity: 0.15;
-  filter: grayscale(100%) blur(1px);
-  mix-blend-mode: screen;
+  opacity: 0.35;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
   z-index: -2;
   pointer-events: none;
 }
