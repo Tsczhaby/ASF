@@ -20,6 +20,19 @@ body {
   background: radial-gradient(circle at top right, #16161a, var(--bg));
   color: var(--text);
   min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: -10% -20% 0;
+  background: url('assets/asf-logo.svg') center/65vw no-repeat;
+  opacity: 0.08;
+  filter: blur(2px);
+  z-index: -2;
+  pointer-events: none;
 }
 
 h1, h2, h3 {
@@ -65,9 +78,23 @@ a:hover::after,
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
   font-weight: 700;
   font-size: 1.4rem;
   letter-spacing: 0.6rem;
+}
+
+.logo img {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.45));
+}
+
+.logo span {
+  display: inline-block;
 }
 
 .site-nav {
@@ -98,6 +125,21 @@ main {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 60%);
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0% 100%);
   z-index: -1;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -6rem;
+  right: -8rem;
+  width: min(72vw, 680px);
+  aspect-ratio: 1;
+  background: url('assets/asf-logo.svg') center/contain no-repeat;
+  opacity: 0.15;
+  filter: grayscale(100%) blur(1px);
+  mix-blend-mode: screen;
+  z-index: -2;
+  pointer-events: none;
 }
 
 .hero-content {
