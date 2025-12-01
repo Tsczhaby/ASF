@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600">
+  <defs>
+    <radialGradient id="base" cx="50%" cy="40%" r="70%">
+      <stop offset="0%" stop-color="#3c3c40" />
+      <stop offset="60%" stop-color="#1a1a1e" />
+      <stop offset="100%" stop-color="#0c0c0f" />
+    </radialGradient>
+    <linearGradient id="gloss" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d2d2d6" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#0c0c0f" stop-opacity="0.8" />
+    </linearGradient>
+  </defs>
+
+  <circle cx="300" cy="300" r="280" fill="url(#base)" />
+  <circle cx="300" cy="300" r="270" fill="none" stroke="#111218" stroke-width="10" />
+  <circle cx="300" cy="300" r="260" fill="none" stroke="#2c2d34" stroke-width="4" opacity="0.6" />
+
+  <g fill="#0b0b0d" opacity="0.75">
+    <path d="M190 245h75c14 0 25-11 25-25v-20h20v20c0 14 11 25 25 25h75c6 0 11 5 11 11 0 3-1 5-3 7l-68 60 28 20c3 2 4 6 3 10l-8 28c-1 4-4 7-8 7h-43v55h-30v-55h-43c-4 0-7-3-8-7l-8-28c-1-4 0-8 3-10l28-20-68-60c-2-2-3-4-3-7 0-6 5-11 11-11z" />
+    <rect x="285" y="410" width="30" height="80" />
+    <rect x="255" y="470" width="90" height="40" rx="8" />
+    <path d="M210 530h180v25c0 6-5 11-11 11H221c-6 0-11-5-11-11v-25z" />
+    <path d="M245 560h110v25c0 6-5 11-11 11h-88c-6 0-11-5-11-11v-25z" opacity="0.85" />
+  </g>
+
+  <text x="300" y="120" text-anchor="middle" fill="#d4d5d8" font-family="'Montserrat', sans-serif" font-weight="600" font-size="36" letter-spacing="8">AESTHETIC STABILITY FRONT</text>
+  <text x="300" y="530" text-anchor="middle" fill="#d4d5d8" font-family="'Montserrat', sans-serif" font-weight="700" font-size="96" letter-spacing="24">ASF</text>
+</svg>
